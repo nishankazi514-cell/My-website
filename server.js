@@ -7,6 +7,10 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.get('/', (req, res) => {
+  res.send('Server is running & MongoDB connected!');
+});
+
 
 const JWT_SECRET = 'PINKWIN_SUPER_SECRET_KEY_2026';
 
