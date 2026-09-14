@@ -11,7 +11,8 @@ app.use(cors());
 const JWT_SECRET = 'PINKWIN_SUPER_SECRET_KEY_2026';
 
 // 1. Connect MongoDB
-mongoose.connect(process.env.MONGO_URI || 'আপনার_MongoDB_Atlas_Connection_String')
+ mongoose.connect('mongodb+srv://nishankazi514_db_user:37WxaTJIcjVHPBha@cluster0.df0jhsk.mongodb.net/pinkwin?retryWrites=true&w=majority')
+   
   
   .then(() => console.log('MongoDB Connected Successfully'))
   .catch(err => console.log('MongoDB Connection Error:', err));
